@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day and Time</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        var arr=["Sunday","Monday","Tuesday","wednesday","Thrusday","Friday","Saturday"];
+        var day = arr [date.getDay()];
+        document.write( "Today is: " + day+ "<br>")
+        
+        var d = new Date();
+        var h = d.getHours();
+        var m=  d.getMinutes();
+        var s = d.getSeconds();
+        document.write("Current time is : " +h +"PM :"+" " + m +":" +" "+ s);
+    </script>
+</body>
+</html>
