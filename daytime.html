@@ -6,18 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day and Time</title>
 </head>
+<style>
+    .style{
+        position: absolute;
+        top: 65%;
+        left:28%;
+    }
+</style>
 <body>
+    <center>
+    <img src="img.jpg"  alt="Time is Money">
+
+    <div class="style">
+        <h1 id="day"></h1>
+        <h1 id="time"></h1>
+    </div>
+
     <script>
         var date = new Date();
         var arr=["Sunday","Monday","Tuesday","wednesday","Thrusday","Friday","Saturday"];
         var day = arr [date.getDay()];
-        document.write( "Today is: " + day+ "<br>")
+        document.getElementById("day").innerHTML = "Today is: " + day+ "<br>";
+        // document.write( "Today is: " + day+ "<br>")
         
         var d = new Date();
         var h = d.getHours();
         var m=  d.getMinutes();
         var s = d.getSeconds();
-        document.write("Current time is : " +h +"PM :"+" " + m +":" +" "+ s);
+        document.getElementById("time").innerHTML = "Current time is : " +h +"PM :"+" " + m +":" +" "+ s;
+        // document.write("Current time is : " +h +"PM :"+" " + m +":" +" "+ s);
     </script>
+    </center>
 </body>
 </html>
